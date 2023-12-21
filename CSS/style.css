@@ -508,7 +508,8 @@ body{
 
     .secondsection__title{
         text-align: left;
-        font-size: 38px;
+        font-size: 36px;
+        font-weight: 700;
     }
 
     .secondsection__paragraph{
@@ -520,7 +521,7 @@ body{
     }
 
     .secondsection__card{
-        margin: 0 0 5rem;
+        margin: 0 0 5rem 0.3rem;
         max-width: 300px;
     }
 
@@ -608,15 +609,16 @@ body{
         content: '';
         position: absolute;
         left: 0;
-        bottom: 950px;
+        bottom: 900px;
         width: 100vw;
+        max-width: 1440px;
         height: 400px;
         background-image: url('../images/bg-curve-desktop.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: 200% 200px;
         z-index: -1;
-        opacity: .3;
+        opacity: 0.3;
     
     }
 }
