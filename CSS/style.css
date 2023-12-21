@@ -161,10 +161,15 @@ body{
     background-repeat: no-repeat;
     background-size: 200% 200px;
     z-index: -1;
-    opacity: .5;
+    opacity: .4;
 
 }
 
+.secondsection__left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .secondsection__texts{
     display: flex;
     flex-direction: column;
@@ -253,6 +258,7 @@ body{
 }
 
 .thirdseccion__container{
+    position: relative;
     width: 100%;
     background-color: #575989;
     margin: 0 auto;
@@ -587,5 +593,30 @@ body{
 
     .about__item, .terms__item {
         cursor: pointer;
+    }
+
+    .secondsection__picture::before{
+       
+        background-image: none;
+       
+    
+    }
+
+
+
+    .thirdseccion__container::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 950px;
+        width: 100vw;
+        height: 400px;
+        background-image: url('../images/bg-curve-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200% 200px;
+        z-index: -1;
+        opacity: .3;
+    
     }
 }
